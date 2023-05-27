@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Update bootstrap css minified file -->
+
+<link rel="icon" href="images/writer.jpg" type="image/png">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	
+<!-- Update jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+<!-- Update bootstrap js minified file -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--google poopines font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Nayeem Islam Nishat</title>
+
+    <style>
+        body{
+ /* Background color */
+    background-color: #d1d5db;
+
+    /* You can use gradient background color such as */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
+
+    /* Curved corners */
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+
+    /* Size */
+    height: 50%;
+    width: 100%;
+            margin: 0%;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+ color:black;
+        }
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .post-content img {
+
+  width: 100%; /* Adjust the width as per your requirements */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display:block;
+  margin:0 auto;
+margin-top:2em;
+margin-bottom:2em;
+}
+
+.postroom{
+
+padding:2%; margin:5% 2%;border-radius: 10px; background-color:#353740;color:#E4E6EB;
+
+}
+
+.main-post-center{
+padding-left: 3%; border-left: darky solid 2px;font-size: 12px;font-family: 'Tiro Bangla', serif;line-height:2;font-weight: 200;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  .post-content img {
+
+  width: 90%; /* Adjust the width as per your requirements */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display:block;
+  margin:0 auto;
+margin-top:2em;
+margin-bottom:2em;
+}
+
+
+.postroom{
+
+padding:2%; margin:5% 4%;border-radius: 10px; background-color:#353740;color:#E4E6EB;
+
+}
+
+.main-post-center{
+padding-left: 3%; border-left: darky solid 2px;font-size: 13px;font-family: 'Tiro Bangla', serif;line-height:2;font-weight: 200;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+  .post-content img {
+
+  width: 80%; /* Adjust the width as per your requirements */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display:block;
+  margin:0 auto;
+margin-top:2em;
+margin-bottom:2em;
+}
+  
+
+.main-post-center{
+padding-left: 3%; border-left: darky solid 2px;font-size: 15px;font-family: 'Tiro Bangla', serif;line-height:2;font-weight: 200;
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ 
+
+  .post-content img {
+
+  width: 77%; /* Adjust the width as per your requirements */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display:block;
+  margin:0 auto;
+margin-top:2em;
+margin-bottom:2em;
+}
+
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+
+  .post-content img {
+
+  width: 80%; /* Adjust the width as per your requirements */
+  height: auto; /* This ensures the aspect ratio is maintained */
+  display:block;
+  margin:0 auto;
+margin-top:2em;
+margin-bottom:2em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .post-content{
+            
+            
+        }
+      
+
+        .row{
+            margin: 0%;
+            padding-top:2%;
+        }
+        h1{
+            text-align:left;
+        }
+        .HALF-WIDTH{
+            font-size: larger !important;
+           
+            padding-left:5%;
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-bottom: 12%;
+            padding-top: 5%;
+            
+        }
+        .hidden {
+  display: none;
+}
+
+     
+        .MIDDLE{
+            margin: 0%;
+            
+            
+        }
+        .LEFT-HALF-WIDTH{
+            padding-left:5%;
+            
+            margin-bottom: 8%;
+            padding-top: 5%;
+            
+            box-shadow: 10px 10px 20px gray;
+            border-left:7px solid;
+            border-image: linear-gradient(180deg, lightsalmon,tomato);
+            border-image-slice: 1;
+            border-radius: 8px;
+        }
+        .RIGHT-HALF-WIDTH{
+            padding-left:5%;
+           
+            margin-bottom: 8%;
+            padding-top: 5%;
+            box-shadow: 10px 10px 20px gray;
+            border-left:7px solid;
+    border-image: linear-gradient(180deg,blue,cyan);
+    border-image-slice: 1;
+    border-radius: 8px;
+        }
+        
+        p{
+          color: rgb(70, 38, 15);
+        }
+        span{
+          color: orange;
+        }
+        
+        .readButtonDesign{
+            
+               background: #adbdad;
+    color: black;
+    border-radius: 5px;
+    border: 0px;
+            
+        }
+        
+        .post-content a {
+  word-wrap: break-word;
+  color: red;
+  text-decoration: none;
+  font-style: italic;
+}
+.full-about-nayeem{
+	display: none;
+}
+.writer-photo{
+width: 10%;border-radius: 50%;border: midnightblue solid 2px;
+
+}
+.postroom{
+
+padding:2%; margin:5% 10%;border-radius: 10px; background-color:#353740;color:#E4E6EB;
+
+}
+.writer-name{
+font-weight: bold;font-size: large;
+
+}
+
+.main-post-center{
+padding-left: 3%; border-left: darky solid 2px;font-size: 20px;font-family: 'Tiro Bangla', serif;line-height:2;font-weight: 200;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container TOP">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 float-start HALF-WIDTH"  >
+           
+            <h1 style="font-size:50px;"><b>Welcome to</b></h1>
+           <h1 style="font-size:35px;"><b><span>Nayeem's </span> World</b></h1><br>
+           <h3>I AM A STUDENT!</h3>
+           <p class="aboutNayeem"><i> 
+
+
+      জীবন তো একটাই।এই জীবনে আনন্দ,স্বাদ,আশা, পূর্ণতা পুরন করতে গিয়ে কোথায় যেন হারিয়ে যাচ্ছি নিজেও জানি না।আমার এই স্বপ্ন আদো পূরন হবে কি না জানি না আমি। সর্বদা আলহামদুলিল্লাহ ❤️
+
+	</i></p>
+           <button type="button" class="btn btn-warning expand-nayeem">ABOUT NAYEEM</button>
+
+	 
+<p class="full-about-nayeem content" style="color:black; background:#F8F8FF;color:darkred;padding-left:1em;padding-bottom:1em;border-radius:5px;margin-top:1em;">
+<b>Name:</b>&nbsp;&nbsp;&nbsp;Nayeem Islam Nishat
+<b>Skills and Expertise:</b>&nbsp;&nbsp;   SINGER
+<b>Background and Education:</b> &nbsp;&nbsp; HSC CANDIDATE 2023
+<b>Want to be:</b>&nbsp;&nbsp;Engineer 
+<b>Dream:</b>&nbsp;&nbsp;To be a rich man
+<b>Favourite film:</b>&nbsp;&nbsp;Train to Busan ,Maharshi
+<b>Favourite Singer:</b>&nbsp;&nbsp;Atif Aslam
+<b>Favourite Singer:</b>&nbsp;&nbsp;Thalapathy Vijay
+</p>
+           
+
+           
+
+          </div>
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 float-end HALF-WIDTH">
+           <img class="img-fluid" src="images/baa.jpg">
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="container MIDDLE">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 float-start HALF-WIDTH"  >
+            <img class="img-fluid float-end"  src="images/profile-2.jpg">
+          </div>
+
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 float-end HALF-WIDTH">
+            <h2><b>Big- Dream</b></h2>
+            <h3>Become a most powerfull man</h3>
+            <p>The value of idea in this world is so much.A good idea can set your life.But you have to dream big.The peple who have dreamed big only they have been succesful peple of the world</p>
+           <a href="https://www.facebook.com/md.nayeemislam.nishat" target="blank"> <button type="button" class="btn btn-warning"><b>My facebook</b></button></a>
+          </div>
+          
+        </div>
+      </div>
+    
+
+
+
+
+
+
+     <p style="font-size: 3em;text-align:center;"><b>ALL POSTS<b></p>
+
+
+
+
+
+
+
+     
+     <div class="posts post postroom">
+    <img class="writer-photo"src="images/writer.jpg">&nbsp;&nbsp;&nbsp;
+
+    <!-- Name of writer -->
+    <dfn class="post-title writer-name">Jhankar Mahbub:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Post-1 </dfn>
+    <br><br>
+   <!-- Write here the post-->
+
+
+
+  <div class="post-content hidden content main-post-center">
+    শুধু ট্যালেন্ট দিয়ে সব হয়ে গেলে, যে ফার্স্ট হয় তাকে ক্লাসে যাওয়া লাগতো না। এক সপ্তাহ হাসপাতালে ঘুরাঘুরি করে ডাক্তার হওয়া গেলে, পাঁচ-ছয় বছর ধরে, মোটা মোটা বই কেউ পড়তো না। তিন-চারবার ব্যর্থ হয়ে ছেড়ে দিলে, সেরা ক্যাপ্টেনের দেখা বাংলাদেশ পেতো না। দুনিয়ার কেউই শর্টকাটে সফল হতে পারে না। তুমিও পারবে না। তাই ঘুমিয়ে ঘুমিয়ে স্বপ্ন দেখো না। সফল হতে হলে চেষ্টা করতে হবে। সাধনা করতে হবে। ভোর হওয়ার আগেই যে সাধনা শুরু করবে, রাত গভীর হওয়ার পরেও যার চেষ্টা চলতে থাকবে, সে সফল হবেই। <br><br>
+
+
+দুনিয়াতে ট্যালেন্ট বলতে কিছু নেই। পরিশ্রমী পোলাপান দিনের পর দিন সাধনা করে যে দক্ষতা, জ্ঞান অর্জন করে, আইলসা পোলাপান সেটাকেই ট্যালেন্ট বলে। সেজন্যই সারা বছর লাড্ডু মেরে, লাস্ট দুই সেমিস্টারে সিজিপিএ ৩.০ এর উপরে তুলতে দিশেহারা হয়ে, বোম্বল মার্কা স্টুডেন্টরা শুধুমাত্র কঠোর পরিশ্রম দিয়ে, এক সেমিস্টারে ৩.৭৫ এর উপরে জিপিএ পেয়ে, ট্যালেন্ট এর তকমা কিনে ফেলতে পারে। আবার কলেজের মেরিটোরিয়াস স্টুডেন্টটা ভার্সিটিতে গিয়ে চার সাবজেক্টে ফেল করে, ট্যালেন্ট এর মেডেল হারিয়ে ফেলে।  সো, ট্যালেন্ট কিচ্ছু না। Only পরিশ্রম is real। তাই আজকের পর, "ওর ট্যালেন্ট আছে বলে পারছে, আমার ট্যালেন্ট নাই বলে পারবো না"- এমন কথা বলবা না। থাপ্পড়ের চোটে চোয়ালের দাঁত একটাও থাকবে না।
+
+আয়েশ আর অর্জন এক পথে চলে না। অলসতা সফলতার বন্ধু হতে পারে না। ৫০ টা জিনিসে সময় অপচয় করলে, কোনটাতেই বস হতে পারবে না। মনোযোগ কেড়ে নেয়, এমন সব জিনিসগুলাকে স্টপ করাতে না পারলে, তারাই তোমার সফলতাকে স্টপ করে দিবে। তাই, একটা লক্ষ্য নিয়ে কাজ করতে হবে। সেই লক্ষ্য অর্জনের জন্য আজকের দিনে কি কি করতে পারবা সেটাতে ফোকাস করবে। লক্ষ্যটা যত কঠিন হবে, চেষ্টার পরিমাণ  তত বেশি হতে হবে। সবসময় নিজের সামর্থ্যের বাইরে গিয়ে চেষ্টা করতে হবে। ঘাম যত বেশি ঝরাবা, তত দ্রুত এগিয়ে যাবা। এগিয়ে যেতে চাইলে বাধা আসবে, উষ্ঠা খাবে। তবে যত বেশি উষ্ঠা খাবে, উষ্ঠা এভোয়েড করার তত বেশি অপশন জেনে যাবে। তখন সিনেমা, আড্ডা, মাস্তির চাইতেও চেষ্টা করার মাঝে বেশি আনন্দ খুঁজে পাবে। এভাবে চলতে চলতে, একসময় নিজের অজান্তেই সফল হয়ে যাবে।
+
+
+Once upon a time, in a quaint little village nestled among rolling green hills, there lived a curious young girl named Lily. She possessed an insatiable thirst for adventure and a heart filled with boundless imagination. One fateful day, while exploring a mysterious forest, Lily stumbled upon a hidden treasure map. Determined to unravel its secrets, she embarked on a thrilling quest, encountering enchanted creatures and overcoming daunting challenges along the way. With courage as her compass, and the warmth of friendship as her guide, Lily unraveled the ancient riddles and ultimately discovered the treasure—a magical key that unlocked endless possibilities and sparked lifelong wonder within her soul.
+
+
+</div>
+    
+    
+<button class="toggle-button readButtonDesign">Read More</button>
+</div>
+     
+
+
+
+     
+    
+	     
+	     
+	     
+	     
+
+
+
+
+<div class="posts post postroom">
+<img class="writer-photo"src="images/writer.jpg">&nbsp;&nbsp;&nbsp;
+
+ <dfn class="post-title writer-name">
+Writer Name: Nayeem 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Post:02
+</dfn>
+<br><br>
+<!-- Write here the post-->
+<div class="post-content hidden content main-post-center">
+জাহাঙ্গীরনগর বিশ্ববিদ্যালয় এর ফার্মেসির  ভর্তিসময়ের ছবি--
+images/jahangirnagar.jpg
+</div>
+<button class="toggle-button readButtonDesign">Read More</button>
+</div>
+     
+
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     <div class="posts post postroom">
+<img class="writer-photo"src="images/writer.jpg">&nbsp;&nbsp;&nbsp;
+
+ <dfn class="post-title writer-name">
+Writer Name: Joykoli 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Post:03
+</dfn>
+<br><br>
+<!-- Write here the post-->
+<div class="post-content hidden content main-post-center">
+বুয়েটের শর্টলিস্টে নাম না আসা মেয়েটি IUT ভর্তি পরীক্ষায় ১ম
+Comeback 100/100🔥
+তোমার জন্য শুভকামনা, তুমি পেরেছো। IUT তে ১ম ❤️
+	images/mahbuba.jpg
+	images/mahbuba-1.jpg
+	
+</div>
+<button class="toggle-button readButtonDesign">Read More</button>
+</div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+      <footer>
+        <p style="text-align: center;">
+         © copyright Nayeem 2021 .All rights reserved
+        </p>
+     </footer>
+     
+     
+     
+   <script>
+         
+         // Get all the toggle buttons
+var toggleButtons = document.querySelectorAll('.toggle-button');
+
+// Iterate over each toggle button
+toggleButtons.forEach(function(button) {
+  // Add click event listener to each button
+  button.addEventListener('click', function() {
+    // Find the closest post element
+    var post = this.closest('.post');
+    
+    // Toggle the visibility of the post content
+    var postContent = post.querySelector('.post-content');
+    postContent.classList.toggle('hidden');
+    
+    // Change the button text
+    if (postContent.classList.contains('hidden')) {
+      this.textContent = 'Read More';
+    } else {
+      this.textContent = 'Read Less';
+    }
+  });
+});
+
+      
+      
+      
+      
+      // Find all post content elements
+var postContents = document.querySelectorAll('.post-content');
+
+// Iterate over each post content
+postContents.forEach(function(content) {
+  // Get the content text
+  var text = content.textContent;
+
+  // Regular expression pattern to find URLs
+  var urlPattern = /(https?:\/\/[^\s]+)/g;
+
+  // Replace URLs with clickable links
+  var replacedText = text.replace(urlPattern, function(url) {
+    return '<a href="' + url + '">' + url + '</a>';
+  });
+  
+  // Replace URLs with shortened links
+  var replacedText = text.replace(urlPattern, function(url) {
+    var urlObject = new URL(url);
+    var domain = urlObject.hostname;
+    return '<a href="' + url + '">' + domain + '</a>';
+  });
+
+  // Update the post content with the modified text
+  content.innerHTML = replacedText;
+});
+
+      
+     
+     
+     
+     
+     
+     // Find all post content elements
+var postContents = document.querySelectorAll('.post-content');
+
+// Iterate over each post content
+postContents.forEach(function(content) {
+  // Get the content HTML
+  var html = content.innerHTML;
+
+  // Regular expression pattern to find image file links or filenames
+  var imagePattern = /([^\s]+\.(?:png|jpe?g|gif))/gi;
+
+  // Replace image links with image elements
+  var replacedHtml = html.replace(imagePattern, function(match, filename) {
+    return '<img src="' + filename + '">';
+  });
+
+  // Update the post content with the modified HTML
+  content.innerHTML = replacedHtml;
+});
+
+      
+
+
+
+         
+      
+
+
+const contentDivs = document.querySelectorAll('.content');
+
+contentDivs.forEach((contentDiv) => {
+  const textWithLineBreaks = contentDiv.innerHTML;
+  const textWithBreakTags = textWithLineBreaks.replace(/\n/g, '<br>');
+  
+  contentDiv.innerHTML = textWithBreakTags;
+});
+   
+
+
+// Get all the expand buttons on the page
+var expandButtons = document.querySelectorAll('.expand-nayeem');
+
+// Add click event listeners to each button
+expandButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Find the corresponding post content
+    var postContent = button.parentNode.querySelector('.full-about-nayeem');
+
+    // Toggle the visibility of the post content
+    postContent.style.display = (postContent.style.display === 'none' || postContent.style.display === '') ? 'block' : 'none';
+
+    // Change the button text
+    button.textContent = (postContent.style.display === 'none') ? 'ABOUT NAYEEM' : 'Hide';
+  });
+});
+
+
+     </script>
+     
+
+</body>
+</html>
