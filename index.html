@@ -4,8 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<title>Login Pomodaro</title>
-<link rel="icon" type="image/png" href="watch.jpg">
+	<title>Daily Talk</title>
+<link rel="icon" type="image/png" href="images/writer.jpg">
 	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -51,7 +51,8 @@ background-position: center center;
   padding-right:3%;
 margin-left:2%;
 margin-right:2%;
-margin-top:2%;
+margin-top:100px;
+margin-bottom: 50px;
  border-top-left-radius: 90px;
   border-top-right-radius: 90px;
   border-bottom-right-radius: 90px;
@@ -229,23 +230,23 @@ margin-right:20%;
 <body>
 
 <div class="intro">
-Pomodaro Timer 
+Daily Talk
 </div>
 	<div class="container">
 		
 	<div class="left">
 
-	<h2 style="margin-bottom:2px;margin-top:5px;padding-top:5px;">Login</h2>
+	<h2 style="margin-bottom:2px;margin-top:5px;padding-top:5px;">LOGIN PAGE</h2>
 		<form id="loginForm">
-			<label for="code">Secret Code:</label>
+			<label for="code">Your Name:</label>
 			<input type="text" id="code" name="code"><br>
-					<label for="email">Email:</label>
-		<input type="email" id="email" name="email"><br>
+					<label for="email">Student(YES/NO):</label>
+		<input type="text" id="email" name="email"><br>
 
-        <label for="otp">Password:</label>
-        <input type="text" id="otp" name="otp"><br>
+        
 
-		<input type="submit" value="Login">
+		<input type="submit" value=" Enter "><br><br>
+      <p style="color: black;font-weight:bold;border: 2px solid black ; border-radius:5px; padding: 2%;">  1) If you first time than Fill up the form and press enter.<br><br> 2) Then you will get a code bellow .<br><br>3) Copy the "RED" color code and give it to us <br></p> <p style="text-align: right;font-size: large;">Coffee First</p>
 	</form>
 	<p id="loginError"></p>
 
@@ -268,9 +269,9 @@ Pomodaro Timer
 
 
 
-
+<br><br>
 <footer>
-  <p style="text-align:center;color:#ffda30;background-color:black;margin-bottom:0px;margin-right:0px;margin-left:0px;"><br><br>Mail us your feedback<br><br>&copy; 2023 Pomodaro Timer. All rights reserved.<br><br></p>
+  <p style="text-align:center;color:#ffda30;background-color:black;margin-bottom:0px;margin-right:0px;margin-left:0px;"><br><br>Mail us your feedback<br><br>&copy; 2023 daily talk. All rights reserved.<br><br></p>
 </footer>
 
 
@@ -339,41 +340,130 @@ Pomodaro Timer
  
 		event.preventDefault();
  
-		const email = loginForm.email.value;
+		// const email = loginForm.email.value;
  
-		const otp = loginForm.otp.value;
+		// const otp = loginForm.otp.value;
 
 
-	       function bokaChoda(n) {
+	    //    function bokaChoda(n) {
   
-			if (n <= 1) {
+		// 	if (n <= 1) {
  
-				return n;
+		// 		return n;
  
-			}
+		// 	}
  
-			return bokaChoda(n-1) + bokaChoda(n-2);
+		// 	return bokaChoda(n-1) + bokaChoda(n-2);
 
  
-           }
+            // });
 		
 
-		var code = parseInt(loginForm.code.value);
+		// var code = parseInt(loginForm.code.value);
 
-		var FUCKu = parseInt(bokaChoda(20).toString().split("").reverse().join(""));
-  
-		if (code !== FUCKu || email !== "mdislamnishat2002@gmail.com" || otp !== "12345") {
-  	loginError.textContent = "Invalid code, email or OTP";
- 
-		} else {
-  
-sessionStorage.setItem("isLoggedIn", true);
- 
-window.location.href = "page1.html";
+		// var FUCKu = parseInt(bokaChoda(20).toString().split("").reverse().join(""));
 
-			window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
+
+
+        function encryptText(text) {
+  const replacements = {
+    '1': 'P',
+    '2': 'R',
+    '3': 'W',
+    '4': 'Q',
+    '5': 'B',
+    '6': 'F',
+    '7': 'X',
+    '8': 'S',
+    '9': 'Y',
+    '.': 'T'
+  };
+
+  let encryptedText = '';
+
+  for (let i = 0; i < text.length; i++) {
+    const character = text[i];
+    const replacement = replacements[character];
+
+    if (replacement) {
+      encryptedText += replacement;
+    } else {
+      encryptedText += character;
+    }
+  }
+
+  return encryptedText;
+}
+        let myVariable;  
+      var allIPaddress = "123 rahim boy 103.178.187.157 bad";
+      fetch('https://api.ipify.org')
+  .then((res) => res.text())
+  
+  .then((ip) => {
+    
+    varifyIP = ip;
+    
+    if (allIPaddress.includes(varifyIP)) {
+      
+        sessionStorage.setItem("isLoggedIn", true);
  
-		}
+ window.location.href = "page1.html";
+ 
+             window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
+    } else {
+        const originalip = varifyIP;
+        const encryptedipcode = encryptText(originalip);
+       
+        loginError.textContent = "A"+ encryptedipcode+ "Z";
+      
+loginError.style.fontWeight = "bold";
+loginError.style.fontSize = "25px";
+loginError.style.color = "red";
+
+    }
+  })
+ .catch(err => console.log(err))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+// 		if (code !== FUCKu || email !== "mdislamnishat2002@gmail.com" || otp !== "12345") {
+//   	loginError.textContent = "Invalid code, email or OTP";
+ 
+// 		} else {
+  
+// sessionStorage.setItem("isLoggedIn", true);
+ 
+// window.location.href = "page1.html";
+
+// 			window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
+ 
+// 		}
 
 
 
