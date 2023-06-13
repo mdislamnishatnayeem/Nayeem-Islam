@@ -24,6 +24,16 @@
 	
 <!-- Update bootstrap js minified file -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+  // Check if the user is logged in (i.e., has a valid session)
+  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+
+  // If the user is not logged in, redirect to the login page
+  if (!isLoggedIn) {
+      window.location.href = "index.html";
+  }
+</script>
 <!--google poopines font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
