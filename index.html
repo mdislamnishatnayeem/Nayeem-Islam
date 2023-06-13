@@ -15,9 +15,18 @@ margin:0%;
 		.container {
 	 display: flex;
   flex-wrap: wrap;
-		
-		
-		
+  .additional-sentence {
+  font-weight: bold;
+  font-size: 18px;
+  color: blue;
+}	
+
+  .blinking-text {
+      animation: blink 2s linear infinite;
+      animation-delay: 10s;
+    }		
+	
+	
 		
 		
 	}
@@ -296,6 +305,7 @@ Daily Talk
 
 
 
+   
 
 
 
@@ -339,29 +349,8 @@ Daily Talk
 	loginForm.addEventListener("submit", (event) => {
  
 		event.preventDefault();
- 
-		// const email = loginForm.email.value;
- 
-		// const otp = loginForm.otp.value;
-
-
-	    //    function bokaChoda(n) {
-  
-		// 	if (n <= 1) {
- 
-		// 		return n;
- 
-		// 	}
- 
-		// 	return bokaChoda(n-1) + bokaChoda(n-2);
-
- 
-            // });
 		
-
-		// var code = parseInt(loginForm.code.value);
-
-		// var FUCKu = parseInt(bokaChoda(20).toString().split("").reverse().join(""));
+		
 
 
 
@@ -394,81 +383,163 @@ Daily Talk
 
   return encryptedText;
 }
-        let varifyIP;  
-      var allIPaddress = "123 rahim boy 103.178.187.157 bad";
-      fetch('https://api.ipify.org')
-  .then((res) => res.text())
-  
-  .then((ip) => {
-    
-    varifyIP = ip;
-    
-    if (allIPaddress.includes(varifyIP)) {
-      
-        sessionStorage.setItem("isLoggedIn", true);
+
+
+
+
+
+
+	
  
- window.location.href = "page1.html";
- 
-             window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
-    } else {
-        const originalip = varifyIP;
-        const encryptedipcode = encryptText(originalip);
+	
+
+
+
+
+
+
+
+
+
+
+
+
+let al; // Declare the 'al' variable outside the scope
+
+       fetch('https://api.ipify.org')
+        .then((res) => res.text())
+        .then((ip) => {
+          al = ip;
+          console.log(al);
+          // Call the function here, inside the '.then()' callback
+          doSomethingWithAl();
+        })
+        .catch((err) => console.log(err)); 
        
-        loginError.textContent = "A"+ encryptedipcode+ "Z";
+        
+       
+       
+       
+     
+      function doSomethingWithAl() {
+        let ipData = "123 rahim boy '103.178.187.158' bad";
+        let searchString = al;
+if (ipData.includes(searchString)) {
+  let startIndex = ipData.indexOf(searchString);
+  let endIndex = startIndex + searchString.length;
+  let result = ipData.substring(startIndex, endIndex);
+  console.log("user ip",result);
+  console.log("data ip",al);
+  if (result === al) {
+      console.log("worked")
       
+sessionStorage.setItem("isLoggedIn", true);
+
+window.location.href = "page1.html";
+
+	//  window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
+  } else {
+    console.log("programm problem");
+ 
+
+  }
+   
+}
+ else {
+// 	console.log("user ip",result);
+//   console.log("data ip",al);
+//  console.log("not buyed");
+hideBlinkingText();
+  const originalip = al;
+const encryptedipcode = encryptText(originalip);
+
+loginError.textContent = "A"+ encryptedipcode+ "Z";
+
 loginError.style.fontWeight = "bold";
 loginError.style.fontSize = "25px";
 loginError.style.color = "red";
 
-    }
-  })
- .catch(err => console.log(err))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
   
-// 		if (code !== FUCKu || email !== "mdislamnishat2002@gmail.com" || otp !== "12345") {
-//   	loginError.textContent = "Invalid code, email or OTP";
- 
-// 		} else {
-  
-// sessionStorage.setItem("isLoggedIn", true);
- 
-// window.location.href = "page1.html";
-
-// 			window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
- 
-// 		}
+        
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var loginButton = document.querySelector("input[type='submit']");
+        loginButton.style.display = "none";
+
+
+// Show the blinking text
+var blinkingText = document.createElement("p");
+        blinkingText.classList.add("blinking-text");
+        blinkingText.textContent = "Please wait...";
+        document.querySelector(".left").appendChild(blinkingText);
+
+		function hideBlinkingText() {
+  blinkingText.style.display = "none";
+}
 
 
 
@@ -477,7 +548,7 @@ loginError.style.color = "red";
 
 
 	
-	});
+ });
 			
 		
 
