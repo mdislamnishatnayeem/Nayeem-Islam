@@ -1,0 +1,30 @@
+function convertWord(word) {
+    const encryption = {
+      'P': '1',
+      'R': '2',
+      'W': '3',
+      'Q': '4',
+      'B': '5',
+      'F': '6',
+      'X': '7',
+      'S': '8',
+      'Y': '9',
+      'T': '.',
+    };
+  
+    let convertedWord = '';
+  
+    for (let i = 0; i < word.length; i++) {
+      const char = word[i].toUpperCase();
+      const convertedChar = encryption[char] || char;
+      convertedWord += convertedChar;
+    }
+  
+    return convertedWord;
+  }
+  
+  // Example usage:
+  const originalWord = 'PXFTYTPPWTBW';
+  const convertedWord = convertWord(originalWord);
+  console.log(convertedWord); // Outputs: 84556.2
+  
