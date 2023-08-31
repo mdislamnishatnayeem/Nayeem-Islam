@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IP Redirect Example</title>
+    <!-- Your head content here -->
 </head>
 <body>
 
-<button id="redirectButton">Check IP and Redirect</button>
+<!-- Your content here -->
+
+<button id="loginButton">Login</button>
 
 <script>
-// Define the expected IP address
-const expectedIp = "103.155.118.163";
-
-// Function to get the user's IP address
-async function getUserIp() {
-    try {
-        const response = await fetch('https://api64.ipify.org?format=json');
-        const data = await response.json();
-        return data.ip;
-    } catch (error) {
-        console.error("Error fetching IP:", error);
-        return null;
-    }
+function getUserIp() {
+    return fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => data.ip)
+        .catch(error => {
+            console.error("Error fetching IP:", error);
+            return null;
+        });
 }
 
-// Perform the IP check and redirection
-async function checkIpAndRedirect() {
+const loginButton = document.getElementById("loginButton");
+
+loginButton.addEventListener("click", async () => {
     const userIp = await getUserIp();
-    if (userIp === expectedIp) {
-        console.log("IP matched. Redirecting...");
-        window.location.replace("page1.html");
+    if (userIp === "103.155.118.163") {
+        sessionStorage.setItem("isLoggedIn", true);
+        window.location.href = "page1.html";
     } else {
-        console.log("IP does not match. Not redirecting.");
+        console.log("IP does not match. Access denied.");
     }
-}
-
-// Add click event listener to the button
-const redirectButton = document.getElementById("redirectButton");
-redirectButton.addEventListener("click", () => {
-    checkIpAndRedirect();
 });
 </script>
 
