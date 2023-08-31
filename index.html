@@ -1,401 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<title>Daily Talk</title>
-<link rel="icon" type="image/png" href="images/writer.jpg">
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color:white ;
-margin:0%;
-		}
-		.container {
-	 display: flex;
-  flex-wrap: wrap;
-  .additional-sentence {
-  font-weight: bold;
-  font-size: 18px;
-  color: blue;
-}	
-
-  .blinking-text {
-      animation: blink 2s linear infinite;
-      animation-delay: 10s;
-    }		
-	
-	
-		
-		
-	}
-.left {
-  flex: 1 1 40%;
-  height: 400px;
-background:#eff1f3;
- border-radius: 20px;
- 
- padding-left:2%;
-  padding-right:3%;
-margin-right:2%;
-margin-left:2%;
-margin-top:2%;
-margin-bottom:4%;
-color:#00008B;
-font-weight:bold;
-
-}
-.right {
-  flex: 1 1 40%;
-  height: 400px;
-background-color:white;
-background-image: url('coffee.jpg');
- background-repeat: no-repeat;
- background-size: cover;
-background-position: center center;
-
-
- padding-left:2%;
-  padding-right:3%;
-margin-left:2%;
-margin-right:2%;
-margin-top:100px;
-margin-bottom: 50px;
- border-top-left-radius: 90px;
-  border-top-right-radius: 90px;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 90px;
-
-text-align: center;
-font-size:30px;
-
-}
-button{
-background-color:darkred;
-border-radius:10px;
-color:black;
-width:60px;
-font-size:20px;
-padding:3px;
-
-}
-
-#textd{
-
-	margin-top:50% ;
-
-
-	background: linear-gradient(to bottom, rgba(255, 255, 0, 0.4), rgba(255, 255, 0, 0.1)), linear-gradient(to bottom, rgba(255, 255, 0, 0.1), rgba(255, 255, 0, 0.4)), linear-gradient(to bottom, #f9e9b7, #f8d28b);  
-
-
-
-
-
-
-
-
-
-margin-left:6%;
-margin-right:4%;
-	font-weight:bold;
-padding-top:3%;
-padding-bottom:3%;
-font-size:19px;
-text-align:left;
-padding-left:4%;
-font-family: "Roboto", sans-serif;
-
-      	
-}
-a{
-text-decoration:none;
-color:white;
-
-}
-.intro{
-width:100%;
-height:80px;
-margin:0%;
-background:#ffda30;
-color:black;
-font-size:40px;
-font-weight:bold;
-text-align:center;
-padding:2px;
-
-
-}
-
-.blinking-text {
-        animation: blink 2s linear infinite;
-	animation-delay:10s;
-      }
-
- 
-
-
-.say{
-
- background:#FEE180;
-font-size:16px;
-border-top-left-radius: 45px;
-  border-top-right-radius:50px;
-  border-bottom-right-radius: 80px;
-  border-bottom-left-radius: 0px;
-margin-left:3%;
-margin-right:10%;
- padding-left:5%;
-  padding-right:5%;
-padding-top:2%;
-font-style: italic;
-padding-bottom:2%;
-}
-
-.sayHEAD{
- background:#FEE180;
-font-size:30px;
-font-weight:bold;
-border-top-left-radius: 0px;
-  border-top-right-radius:90PX;
-  border-bottom-right-radius: 90px;
-  border-bottom-left-radius: 0px;
-margin-left:3%;
-margin-right:10%;
- padding-left:5%;
-  padding-right:5%;
-padding-top:2%;
-padding-bottom:2%;
-
-
-}
-
-
-
-     
-      @keyframes blink {
-        50% {
-          opacity: 0;
-        }
-      }
-
-
-	h2 {
-		text-align: center;
-		margin-top: 0;
-	}
-	
-	label {
-		display: block;
-		margin-bottom: 5px;
-	}
-
-	input[type="text"], input[type="email"], input[type="password"] {
-		display: block;
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 10px;
-		border: none;
-		border-radius: 5px;
-		box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
-	}
-
-	input[type="submit"] {
-		background-color:white;
-		color:blue;
-                font-weight:bold;
- float: right;
-margin-right:20%;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-		border: none;
-		border-radius: 5px;
-		padding: 10px;
-		cursor: pointer;
-	}
-
-	input[type="submit"]:hover {
-		background-color:#ffda30;
-	}
-
-	#error {
-		color: red;
-		font-weight: bold;
-	}
- 
-
-
-
-@media (max-width: 767px) {
-  .left {
-    flex: 1 1 100%;
-  }
-}
-</style>
+    <title>IP Redirect Example</title>
 </head>
-
-
-
-
 <body>
 
-<div class="intro">
-Daily Talk
-</div>
-	<div class="container">
-		
-	<div class="left">
-
-	<h2 style="margin-bottom:2px;margin-top:5px;padding-top:5px;">LOGIN PAGE</h2>
-		<form id="loginForm">
-			<label for="code">Your Name:</label>
-			<input type="text" id="code" name="code"><br>
-					<label for="email">Student(YES/NO):</label>
-		<input type="text" id="email" name="email"><br>
-
-        
-
-		<input type="submit" value=" Enter "><br><br>
-      <p style="color: black;font-weight:bold;border: 2px solid black ; border-radius:5px; padding: 2%;">  1) If you first time than Fill up the form and press enter.<br><br> 2) Then you will get a code bellow .<br><br>3) Copy the "RED" color code and give it to us <br></p> <p style="text-align: right;font-size: large;">Coffee First</p>
-	</form>
-	<p id="loginError"></p>
-
-	</div>
-  	
-	<div class="right">
-		<p id="textd">By me a 30 taka coffee <img src="buyme.jpg" style="width:40px;border-radius: 40%;"  > first. <br> My Rocket:&nbsp;&nbsp;01319132387 <br>
-	<i class="blinking-text"> টাকা Payment করার পর Email বাটনে click করুন এবং আপনার email address টি দিন এরপর  আপনাকে login করার জন্য তথ্য দেওয়া হবে</i>
-	
-<button> <a href=mailto:mdislamnishat2002@gmail.com;?subject="Give-me-login-informations.I-have-paied-your-coffee-bill">email</a>    </button>
-
-
- </p>
-
-	</div>
-
-
-		
-
-
-
-
-<br><br>
-<footer>
-  <p style="text-align:center;color:#ffda30;background-color:black;margin-bottom:0px;margin-right:0px;margin-left:0px;"><br><br>Mail us your feedback<br><br>&copy; 2023 daily talk. All rights reserved.<br><br></p>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<button id="redirectButton">Check IP and Redirect</button>
 
 <script>
+// Define the expected IP address
+const expectedIp = "103.155.118.163";
 
-
-
-
-   
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const loginForm = document.getElementById("loginForm");
-
-const loginError = document.getElementById("loginError");
-
-loginForm.addEventListener("submit", (event) => {
-    let al; // Declare the 'al' variable outside the scope
-
-    fetch('https://api.ipify.org')
-        .then((res) => res.text())
-        .then((ip) => {
-            al = ip;
-            console.log(al);
-            // Call the function here, inside the '.then()' callback
-            doSomethingWithAl();
-        })
-        .catch((err) => console.log(err)); 
-
-    function doSomethingWithAl() {
-        let ipData = "103.178.187.156"; // Declare the 'ipData' variable
-
-        if (ipData === al) {
-            console.log("worked")
-            sessionStorage.setItem("isLoggedIn", true);
-            window.location.href = "page1.html";
-        } else {
-            console.log("program problem");
-            // Handle the case where IP doesn't match
-        }
+// Function to get the user's IP address
+async function getUserIp() {
+    try {
+        const response = await fetch('https://api64.ipify.org?format=json');
+        const data = await response.json();
+        return data.ip;
+    } catch (error) {
+        console.error("Error fetching IP:", error);
+        return null;
     }
+}
+
+// Perform the IP check and redirection
+async function checkIpAndRedirect() {
+    const userIp = await getUserIp();
+    if (userIp === expectedIp) {
+        console.log("IP matched. Redirecting...");
+        window.location.replace("page1.html");
+    } else {
+        console.log("IP does not match. Not redirecting.");
+    }
+}
+
+// Add click event listener to the button
+const redirectButton = document.getElementById("redirectButton");
+redirectButton.addEventListener("click", () => {
+    checkIpAndRedirect();
 });
-
-
-	
- 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 
-
-
-
-<!-- 
-<script src="https://dunggramer.github.io/disable-devtool/disable-devtool.min.js" defer></script>
-	<script src="https://cdn.staticaly.com/gh/DungGramer/disable-devtool/cbf447f/disable-devtool.min.js" defer></script>
-	<script src="https://gitcdn.xyz/repo/DungGramer/disable-devtool/master/disable-devtool.min.js" defer></script> -->
 </body>
 </html>
-			
