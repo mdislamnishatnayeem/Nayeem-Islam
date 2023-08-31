@@ -423,14 +423,8 @@ let al; // Declare the 'al' variable outside the scope
      
       function doSomethingWithAl() {
         let ipData = "103.178.187.156";
-        let searchString = al;
-if (ipData.includes(searchString)) {
-  let startIndex = ipData.indexOf(searchString);
-  let endIndex = startIndex + searchString.length;
-  let result = ipData.substring(startIndex, endIndex);
-  console.log("user ip",result);
-  console.log("data ip",al);
-  if (result === al) {
+        
+  if (ipData === al) {
       console.log("worked")
       
 sessionStorage.setItem("isLoggedIn", true);
