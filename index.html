@@ -339,212 +339,49 @@ Daily Talk
 
 
 
+const loginForm = document.getElementById("loginForm");
 
-	const loginForm = document.getElementById("loginForm");
+const loginError = document.getElementById("loginError");
 
-	
-	const loginError = document.getElementById("loginError");
+loginForm.addEventListener("submit", (event) => {
+    let al; // Declare the 'al' variable outside the scope
 
-
-	loginForm.addEventListener("submit", (event) => {
- 
-		event.preventDefault();
-		
-		
-
-
-
-        function encryptText(text) {
-  const replacements = {
-    '1': 'P',
-    '2': 'R',
-    '3': 'W',
-    '4': 'Q',
-    '5': 'B',
-    '6': 'F',
-    '7': 'X',
-    '8': 'S',
-    '9': 'Y',
-    '.': 'T'
-  };
-
-  let encryptedText = '';
-
-  for (let i = 0; i < text.length; i++) {
-    const character = text[i];
-    const replacement = replacements[character];
-
-    if (replacement) {
-      encryptedText += replacement;
-    } else {
-      encryptedText += character;
-    }
-  }
-
-  return encryptedText;
-}
-
-
-
-
-
-
-	
- 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-let al; // Declare the 'al' variable outside the scope
-
-       fetch('https://api.ipify.org')
+    fetch('https://api.ipify.org')
         .then((res) => res.text())
         .then((ip) => {
-          al = ip;
-          console.log(al);
-          // Call the function here, inside the '.then()' callback
-          doSomethingWithAl();
+            al = ip;
+            console.log(al);
+            // Call the function here, inside the '.then()' callback
+            doSomethingWithAl();
         })
         .catch((err) => console.log(err)); 
-       
-        
-       
-       
-       
-     
-      function doSomethingWithAl() {
-        let ipData = "103.178.187.156";
-        
-  if (ipData === al) {
-      console.log("worked")
-      
-sessionStorage.setItem("isLoggedIn", true);
 
-window.location.href = "page1.html";
-
-	//  window.location.href = "https://mdislamnishatnayeem.github.io/Nayeem-Islam/page1.html";
-  } else {
-    console.log("programm problem");
- 
-
-  }
-   
-}
- else {
-// 	console.log("user ip",result);
-//   console.log("data ip",al);
-//  console.log("not buyed");
-hideBlinkingText();
-  const originalip = al;
-const encryptedipcode = encryptText(originalip);
-
-loginError.textContent = "A"+ encryptedipcode+ "Z";
-
-loginError.style.fontWeight = "bold";
-loginError.style.fontSize = "25px";
-loginError.style.color = "red";
-
-
-}
-  
-        
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var loginButton = document.querySelector("input[type='submit']");
-        loginButton.style.display = "none";
-
-
-// Show the blinking text
-var blinkingText = document.createElement("p");
-        blinkingText.classList.add("blinking-text");
-        blinkingText.textContent = "Please wait...";
-        document.querySelector(".left").appendChild(blinkingText);
-
-		function hideBlinkingText() {
-  blinkingText.style.display = "none";
-}
-
-
-
-
-
+    function doSomethingWithAl() {
+        let ipData = "103.178.187.156"; // Declare the 'ipData' variable
+
+        if (ipData === al) {
+            console.log("worked")
+            sessionStorage.setItem("isLoggedIn", true);
+            window.location.href = "page1.html";
+        } else {
+            console.log("program problem");
+            // Handle the case where IP doesn't match
+        }
+    }
+});
 
 
 	
- });
-			
-		
+ 
+	
+
+
+
+
+
+
+
+
 
 
 
